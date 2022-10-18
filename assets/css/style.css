@@ -4,20 +4,23 @@
     margin: 0;
 }
 
-/* moved all element selectors before class selectors  */
+/* Sets background color for page */
 body {
     background-color: #d9dcd6;
 }
 
+/* sets link color and removes underline  */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* sets font size for p elements */
 p {
     font-size: 16px;
 }
 
+/* made nav bar fixed for better navigation accessibility */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,19 +28,20 @@ header {
     color: #ffffff;
     position: fixed;
     width: 100%;
-    /* made nav bar fixed for better navigation accessibility */
 }
 
+/* sets header size and display */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* made color sightly darker for people with poor color recognition */
 header h1 .seo {
     color: #bcc2b5;
-    /* made color sightly darker for people with poor color recognition */
 }
 
+/* sets nav bar properties and positioning */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -46,31 +50,19 @@ header nav {
     font-size: 20px;
 }
 
- 
+/* removed bullets in nav list  */
 header nav ul {
     list-style: none;
 }
 
+/* positions nav links properly  */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 
 }
 
-/* below is not part of assigment. Was experimenting with MQ's */
-@media screen and (max-width:1015px) {
-    header nav ul li {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width:845px) {
-    header nav ul li {
-        font-size: 12px;
-    }
-}
-/* above is not part of assignment.  */
-
+/* Main hero image used for site */
 .hero {
     height: 800px;
     width: 100%;
@@ -80,7 +72,7 @@ header nav ul li {
     background-position: center;
 }
 
-/* moved content styles above benefits to match flow of html */
+/* moved content styles above benefits to match flow of html. Section content styling for three main sections under hero. consolidated content section styles */
 section.content {
     margin-bottom: 20px;
     padding: 50px;
@@ -88,72 +80,39 @@ section.content {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-    /* consolidated content section styles */
 }
 
-/* .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff; */
-
-
+/* consolidated content img styles */
 section.content img {
     max-height: 200px;
-    /* consolidated content img styles */
 }
 
-/* .online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-} */
-
+/* consolidated content h2 style */
 section.content h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    /* consolidated content h2 style */
 }
 
-/* .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
-
+/* section images floated to left of text  */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* section images floated to right of text */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* sets proper width, display, and margin for main content  */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* benefits section on right side of screen */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -165,57 +124,26 @@ main {
     background-color: #2589bd;
 }
 
+/* consolidated benefit styling */
 aside.benefits article.benefit {
     margin-bottom: 32px;
     color: #ffffff;
-    /* consolidated benefit styling */
 }
 
-/* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
+/* consolitated benefit h3 styles */
 aside.benefits article.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
-    /* consolitated benefit h3 styles */
 }
 
-/* .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center; */
-
+/* consolitated benefit img styles */
 article.benefit img {
     display: block;
     margin: 10px auto;
-    width:160px;
-    
-    /* consolitated benefit img styles */
+    width: 160px;
 }
 
-/* .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
-
+/* Sets footer properties, alignment, font, and padding  */
 footer {
     padding: 30px;
     clear: both;
@@ -223,6 +151,7 @@ footer {
     text-align: center;
 }
 
+/* sets footer h2 font size  */
 footer h2 {
     font-size: 20px;
 }
